@@ -1,0 +1,1868 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五一黑料视频_影像观察_深度内容与真实记录平台</title>
+<meta name="description" content="五一黑料视频官方网站，聚焦真实记录与深度影像的垂直内容平台，汇集原创高清视频、创作者社区与企业级内容生态，持续输出值得信赖的精品内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141518'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%23ff3b30'/%3E%3C/svg%3E">
+<style>
+:root{
+  --hk-bg:#0f1012;
+  --hk-surface:#16181c;
+  --hk-surface-2:#1d2025;
+  --hk-line:#2a2e35;
+  --hk-line-soft:#22262c;
+  --hk-text:#e9ebee;
+  --hk-text-2:#a3a9b3;
+  --hk-text-3:#767d88;
+  --hk-accent:#ff3b30;
+  --hk-accent-soft:rgba(255,59,48,.12);
+  --hk-accent-2:#ffd166;
+  --hk-radius:14px;
+  --hk-maxw:1180px;
+  --hk-sticky:104px;
+  --hk-font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--hk-bg);color:var(--hk-text);
+  font-family:var(--hk-font);font-size:16px;line-height:1.75;
+  letter-spacing:.01em;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0 0 1em}
+ul,ol{margin:0;padding-left:1.15em}
+section{scroll-margin-top:var(--hk-sticky)}
+.hk-container{width:100%;max-width:var(--hk-maxw);margin:0 auto;padding:0 22px}
+.hk-skip{position:absolute;left:-9999px;top:0;background:var(--hk-accent);color:#fff;padding:10px 16px;z-index:200}
+.hk-skip:focus{left:12px;top:12px}
+
+/* ===== sticky top: notice + header ===== */
+.hk-topwrap{position:sticky;top:0;z-index:60}
+.hk-notice{
+  background:linear-gradient(90deg,#2a1113 0%,#3a1417 45%,#241012 100%);
+  border-bottom:1px solid #4a1a1e;
+  font-size:13px;color:#ffd9d6;
+}
+.hk-notice__inner{
+  display:flex;align-items:center;gap:12px;
+  max-width:var(--hk-maxw);margin:0 auto;padding:8px 22px;
+  overflow:hidden;
+}
+.hk-notice__tag{
+  flex:0 0 auto;background:var(--hk-accent);color:#fff;font-size:11px;font-weight:700;
+  padding:2px 8px;border-radius:4px;letter-spacing:.08em;
+}
+.hk-notice__track{display:flex;gap:34px;white-space:nowrap;overflow-x:auto;scrollbar-width:none}
+.hk-notice__track::-webkit-scrollbar{display:none}
+.hk-notice__item{flex:0 0 auto;display:inline-flex;align-items:center;gap:7px}
+.hk-notice__item::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--hk-accent-2);flex:0 0 auto}
+.hk-notice__item b{color:#fff;font-weight:600}
+
+.hk-header{
+  background:rgba(15,16,18,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--hk-line);
+}
+.hk-header__inner{
+  max-width:var(--hk-maxw);margin:0 auto;padding:12px 22px;
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.hk-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.hk-brand__mark{
+  width:40px;height:40px;border-radius:11px;background:var(--hk-accent);
+  display:grid;place-items:center;flex:0 0 auto;box-shadow:0 4px 18px rgba(255,59,48,.35);
+}
+.hk-brand__mark svg{width:20px;height:20px}
+.hk-brand__name{font-size:17px;font-weight:800;letter-spacing:.02em;white-space:nowrap}
+.hk-brand__name span{color:var(--hk-accent)}
+.hk-brand__sub{font-size:11px;color:var(--hk-text-3);letter-spacing:.14em;line-height:1.2;margin-top:1px}
+
+.hk-nav{flex:1 1 auto;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.hk-nav__link{
+  font-size:14px;color:var(--hk-text-2);padding:7px 12px;border-radius:8px;
+  transition:color .2s,background .2s;white-space:nowrap;
+}
+.hk-nav__link:hover,.hk-nav__link.is-active{color:#fff;background:var(--hk-surface-2)}
+
+.hk-header__tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.hk-search{position:relative;display:flex;align-items:center}
+.hk-search__input{
+  width:186px;background:var(--hk-surface);border:1px solid var(--hk-line);
+  color:var(--hk-text);border-radius:9px;padding:9px 34px 9px 13px;font-size:13px;
+  transition:border-color .2s,width .25s,box-shadow .2s;
+}
+.hk-search__input::placeholder{color:var(--hk-text-3)}
+.hk-search__input:focus{outline:none;border-color:var(--hk-accent);width:224px;box-shadow:0 0 0 3px var(--hk-accent-soft)}
+.hk-search__btn{
+  position:absolute;right:6px;top:50%;transform:translateY(-50%);
+  background:none;border:0;color:var(--hk-text-3);padding:4px;display:grid;place-items:center;border-radius:6px;
+}
+.hk-search__btn:hover{color:var(--hk-accent)}
+.hk-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  border-radius:9px;border:1px solid transparent;font-size:14px;font-weight:600;
+  padding:9px 17px;transition:transform .18s,background .2s,border-color .2s,box-shadow .2s;
+}
+.hk-btn:active{transform:scale(.97)}
+.hk-btn--primary{background:var(--hk-accent);color:#fff;box-shadow:0 4px 16px rgba(255,59,48,.28)}
+.hk-btn--primary:hover{background:#ff5044}
+.hk-btn--ghost{background:transparent;color:var(--hk-text);border-color:var(--hk-line)}
+.hk-btn--ghost:hover{border-color:var(--hk-accent);color:var(--hk-accent)}
+.hk-btn--sm{padding:6px 12px;font-size:12.5px;border-radius:7px}
+.hk-navtoggle{
+  display:none;background:var(--hk-surface);border:1px solid var(--hk-line);color:var(--hk-text);
+  border-radius:9px;padding:8px 10px;
+}
+
+/* ===== hero ===== */
+.hk-hero{padding:44px 0 8px;position:relative;overflow:hidden}
+.hk-hero::before{
+  content:"";position:absolute;inset:-40% -10% auto -10%;height:520px;
+  background:radial-gradient(60% 70% at 30% 20%,rgba(255,59,48,.16),transparent 70%),
+             radial-gradient(50% 60% at 85% 10%,rgba(255,209,102,.08),transparent 70%);
+  pointer-events:none;
+}
+.hk-hero__grid{
+  position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr);
+  gap:44px;align-items:center;
+}
+.hk-hero__eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;
+  color:var(--hk-accent-2);border:1px solid #3a3122;background:#1c1a14;
+  padding:5px 12px;border-radius:999px;margin-bottom:20px;
+}
+.hk-hero__eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--hk-accent-2);box-shadow:0 0 0 4px rgba(255,209,102,.14)}
+.hk-hero h1{
+  font-size:clamp(38px,5.4vw,62px);letter-spacing:-.02em;line-height:1.08;
+  margin-bottom:18px;font-weight:800;
+}
+.hk-hero h1 em{
+  font-style:normal;color:var(--hk-accent);
+  background:linear-gradient(180deg,transparent 66%,rgba(255,59,48,.22) 66%);
+}
+.hk-hero__lead{color:var(--hk-text-2);font-size:16.5px;max-width:36em;margin-bottom:22px}
+.hk-hero__lead strong{color:var(--hk-text)}
+.hk-hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.hk-hero__stats{display:flex;gap:30px;flex-wrap:wrap;border-top:1px solid var(--hk-line-soft);padding-top:20px}
+.hk-stat__num{font-size:26px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:baseline;gap:3px}
+.hk-stat__num i{font-style:normal;font-size:13px;color:var(--hk-accent);font-weight:700}
+.hk-stat__label{font-size:12px;color:var(--hk-text-3);letter-spacing:.06em}
+
+.hk-hero__visual{position:relative}
+.hk-hero__frame{
+  border-radius:18px;overflow:hidden;border:1px solid var(--hk-line);
+  background:var(--hk-surface);box-shadow:0 30px 70px -30px rgba(0,0,0,.9);
+  position:relative;
+}
+.hk-hero__frame svg{width:100%;height:auto;aspect-ratio:16/11}
+.hk-hero__play{
+  position:absolute;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:8px;
+  background:rgba(12,13,15,.78);backdrop-filter:blur(8px);border:1px solid #34383f;
+  border-radius:999px;padding:7px 15px 7px 9px;font-size:12.5px;color:#fff;
+}
+.hk-hero__play span{
+  width:24px;height:24px;border-radius:50%;background:var(--hk-accent);display:grid;place-items:center;flex:0 0 auto;
+}
+.hk-hero__caption{
+  position:absolute;right:16px;bottom:18px;font-size:11.5px;color:var(--hk-text-3);
+  background:rgba(12,13,15,.7);padding:4px 10px;border-radius:6px;border:1px solid #2c3037;
+}
+.hk-hero__chip{
+  position:absolute;left:-14px;top:26px;background:var(--hk-surface-2);
+  border:1px solid var(--hk-line);border-radius:12px;padding:11px 15px;
+  box-shadow:0 18px 40px -18px #000;min-width:150px;
+}
+.hk-hero__chip b{display:block;font-size:13px}
+.hk-hero__chip span{font-size:11.5px;color:var(--hk-text-3)}
+
+/* ===== section base ===== */
+.hk-section{padding:52px 0}
+.hk-section--tight{padding:38px 0}
+.hk-sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:20px;
+  flex-wrap:wrap;margin-bottom:26px;
+}
+.hk-sec-head__left{max-width:46em}
+.hk-kicker{
+  display:inline-flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.18em;
+  color:var(--hk-accent);font-weight:700;margin-bottom:9px;
+}
+.hk-kicker::before{content:"";width:16px;height:2px;background:var(--hk-accent);border-radius:2px}
+.hk-h2{font-size:clamp(23px,2.7vw,31px);letter-spacing:-.01em}
+.hk-sec-sub{color:var(--hk-text-2);font-size:14.5px;margin-top:8px;margin-bottom:0}
+.hk-more{font-size:13px;color:var(--hk-text-2);border-bottom:1px solid var(--hk-line);padding-bottom:2px;white-space:nowrap}
+.hk-more:hover{color:var(--hk-accent);border-color:var(--hk-accent)}
+
+/* ===== cards / panels ===== */
+.hk-panel{
+  background:var(--hk-surface);border:1px solid var(--hk-line);border-radius:var(--hk-radius);
+  padding:26px 26px;
+}
+.hk-card{
+  background:var(--hk-surface);border:1px solid var(--hk-line);border-radius:var(--hk-radius);
+  transition:border-color .22s,transform .22s,box-shadow .22s;min-width:0;
+}
+.hk-card:hover{border-color:#3d434c;transform:translateY(-3px);box-shadow:0 18px 40px -26px #000}
+
+/* ===== focus + list ===== */
+.hk-focusgrid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:24px;align-items:start}
+.hk-focus{overflow:hidden}
+.hk-focus__media{position:relative;overflow:hidden;border-bottom:1px solid var(--hk-line)}
+.hk-focus__media svg{width:100%;height:auto;aspect-ratio:16/9}
+.hk-badge{
+  position:absolute;left:14px;top:14px;background:var(--hk-accent);color:#fff;
+  font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:5px;letter-spacing:.06em;
+}
+.hk-focus__body{padding:20px 22px 22px}
+.hk-focus__body h3{font-size:21px;margin-bottom:9px;line-height:1.4}
+.hk-focus__body p{color:var(--hk-text-2);font-size:14px;margin-bottom:14px}
+.hk-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+.hk-tag{
+  font-size:11.5px;color:var(--hk-text-2);background:var(--hk-surface-2);
+  border:1px solid var(--hk-line);padding:2px 9px;border-radius:999px;
+}
+.hk-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--hk-text-3)}
+.hk-meta__author{display:inline-flex;align-items:center;gap:7px;color:var(--hk-text-2)}
+.hk-avatarball{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff;flex:0 0 auto}
+.hk-actions{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+
+/* mini list */
+.hk-minilist{display:flex;flex-direction:column;gap:0}
+.hk-mini{
+  display:flex;gap:14px;padding:15px 16px;border-bottom:1px solid var(--hk-line-soft);
+  transition:background .2s;
+}
+.hk-mini:last-child{border-bottom:0}
+.hk-mini:hover{background:var(--hk-surface-2)}
+.hk-mini__idx{font-size:13px;font-weight:800;color:var(--hk-accent);flex:0 0 auto;width:22px;padding-top:2px}
+.hk-mini__main{min-width:0;flex:1 1 auto}
+.hk-mini__main h4{font-size:14.5px;font-weight:600;margin-bottom:4px;line-height:1.5}
+.hk-mini__main p{font-size:12.5px;color:var(--hk-text-3);margin:0 0 6px}
+.hk-mini__foot{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:var(--hk-text-3)}
+.hk-mini__foot b{color:var(--hk-text-2);font-weight:600}
+
+/* video list */
+.hk-vlist{display:flex;flex-direction:column;gap:14px}
+.hk-vrow{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start;
+  padding:20px 22px;
+}
+.hk-vrow__top{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.hk-vrow h3{font-size:17.5px;margin-bottom:6px;line-height:1.45}
+.hk-vrow p{font-size:13.5px;color:var(--hk-text-2);margin-bottom:10px}
+.hk-vrow__side{display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex:0 0 auto}
+.hk-vrow__metrics{display:flex;gap:13px;font-size:12px;color:var(--hk-text-3);white-space:nowrap}
+.hk-count{display:inline-flex;align-items:center;gap:5px}
+.hk-count svg{width:13px;height:13px}
+
+/* ===== topic / feature ===== */
+.hk-topicgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.hk-topic{display:flex;flex-direction:column;overflow:hidden}
+.hk-topic__media svg{width:100%;height:auto;aspect-ratio:16/9}
+.hk-topic__body{padding:18px 19px 20px;display:flex;flex-direction:column;flex:1 1 auto}
+.hk-status{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:#8fd6a0;
+  background:rgba(80,200,120,.1);border:1px solid rgba(80,200,120,.24);
+  padding:2px 8px;border-radius:999px;margin-bottom:9px;align-self:flex-start;
+}
+.hk-status--hot{color:#ffb3ad;background:var(--hk-accent-soft);border-color:#57231f}
+.hk-status::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
+.hk-topic__body h3{font-size:16.5px;margin-bottom:7px}
+.hk-topic__body p{font-size:13px;color:var(--hk-text-2);margin-bottom:13px}
+.hk-topic__list{list-style:none;padding:0;margin:0 0 14px;display:flex;flex-direction:column;gap:8px}
+.hk-topic__list li{
+  font-size:12.5px;color:var(--hk-text-2);padding-left:16px;position:relative;line-height:1.55;
+}
+.hk-topic__list li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:1px;background:var(--hk-accent);opacity:.8}
+.hk-topic__foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--hk-text-3)}
+
+/* ===== essay deep dive ===== */
+.hk-deep{
+  display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:36px;align-items:start;
+}
+.hk-deep__aside{position:sticky;top:calc(var(--hk-sticky) + 18px)}
+.hk-deep__aside .hk-panel{padding:22px}
+.hk-deep__aside h3{font-size:15px;margin-bottom:12px}
+.hk-deep__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
+.hk-deep__toc a{
+  display:block;font-size:13px;color:var(--hk-text-2);padding:7px 10px;border-radius:7px;
+  border-left:2px solid transparent;transition:.2s;
+}
+.hk-deep__toc a:hover{background:var(--hk-surface-2);color:#fff;border-left-color:var(--hk-accent)}
+.hk-prose{font-size:15px;color:#c6cad1;line-height:1.95}
+.hk-prose h3{font-size:19px;color:var(--hk-text);margin:30px 0 12px;padding-top:4px}
+.hk-prose h3:first-child{margin-top:0}
+.hk-prose p{margin-bottom:15px}
+.hk-prose strong{color:#fff}
+.hk-quote{
+  border-left:3px solid var(--hk-accent);background:var(--hk-surface);
+  padding:16px 20px;border-radius:0 10px 10px 0;color:var(--hk-text-2);font-size:14.5px;
+  margin:20px 0;
+}
+.hk-figure{margin:22px 0}
+.hk-figure svg{width:100%;height:auto;aspect-ratio:16/7;border-radius:12px;border:1px solid var(--hk-line)}
+.hk-figure figcaption{font-size:12px;color:var(--hk-text-3);margin-top:8px}
+
+/* ===== authors ===== */
+.hk-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.hk-author{padding:22px 22px;display:flex;gap:16px;align-items:flex-start}
+.hk-author__av{
+  width:52px;height:52px;border-radius:14px;flex:0 0 auto;display:grid;place-items:center;
+  font-size:19px;font-weight:800;color:#fff;letter-spacing:.02em;
+}
+.hk-author__main{min-width:0}
+.hk-author__name{font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.hk-author__field{font-size:12px;color:var(--hk-accent-2);background:#221e13;border:1px solid #37301d;padding:1px 8px;border-radius:999px;font-weight:600}
+.hk-author__nums{display:flex;gap:14px;font-size:12px;color:var(--hk-text-3);margin:6px 0 9px;flex-wrap:wrap}
+.hk-author__nums b{color:var(--hk-text);font-weight:700}
+.hk-author__bio{font-size:13px;color:var(--hk-text-2);margin:0 0 12px;line-height:1.7}
+
+/* ===== reviews ===== */
+.hk-reviews{columns:2;column-gap:20px}
+.hk-review{
+  break-inside:avoid;background:var(--hk-surface);border:1px solid var(--hk-line);
+  border-radius:12px;padding:18px 19px;margin-bottom:20px;
+}
+.hk-review__head{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.hk-review__who{font-size:13.5px;font-weight:600}
+.hk-review__when{font-size:11.5px;color:var(--hk-text-3);margin-left:auto}
+.hk-review__stars{color:var(--hk-accent-2);font-size:12px;letter-spacing:.1em;margin-bottom:6px}
+.hk-review p{font-size:13.5px;color:#c2c7ce;margin:0;line-height:1.8}
+.hk-review--quote{
+  background:linear-gradient(160deg,#1d1416,#16181c 70%);
+  border-color:#3a2224;
+}
+.hk-review--quote p{font-size:15px;color:#eee}
+
+/* ===== dynamic list ===== */
+.hk-dynlist{display:flex;flex-direction:column;gap:0;list-style:none;padding:0;margin:0}
+.hk-dyn{
+  display:grid;grid-template-columns:86px minmax(0,1fr) auto;gap:16px;align-items:center;
+  padding:16px 4px;border-bottom:1px dashed var(--hk-line);
+}
+.hk-dyn:last-child{border-bottom:0}
+.hk-dyn__date{font-size:12px;color:var(--hk-text-3);letter-spacing:.04em}
+.hk-dyn__title{font-size:14.5px;font-weight:600;margin-bottom:3px}
+.hk-dyn__desc{font-size:12.5px;color:var(--hk-text-3);margin:0}
+.hk-dyn__pill{font-size:11px;color:var(--hk-text-2);border:1px solid var(--hk-line);padding:2px 9px;border-radius:999px;white-space:nowrap}
+
+/* ===== partners ===== */
+.hk-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.hk-partner{
+  border:1px solid var(--hk-line);border-radius:12px;background:var(--hk-surface-2);
+  padding:20px 16px;text-align:center;transition:.2s;
+}
+.hk-partner:hover{border-color:#3d434c;background:#212429}
+.hk-partner__logo{font-size:16px;font-weight:800;letter-spacing:.02em;margin-bottom:5px}
+.hk-partner__desc{font-size:12px;color:var(--hk-text-3)}
+
+/* ===== faq ===== */
+.hk-faq{display:flex;flex-direction:column;gap:10px}
+.hk-faq details{
+  background:var(--hk-surface);border:1px solid var(--hk-line);border-radius:11px;
+  padding:0 18px;transition:border-color .2s;
+}
+.hk-faq details[open]{border-color:#3d434c}
+.hk-faq summary{
+  list-style:none;cursor:pointer;padding:15px 0;font-size:14.5px;font-weight:600;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.hk-faq summary::-webkit-details-marker{display:none}
+.hk-faq summary::after{
+  content:"+";font-size:18px;color:var(--hk-accent);font-weight:400;flex:0 0 auto;line-height:1;
+}
+.hk-faq details[open] summary::after{content:"–"}
+.hk-faq__a{font-size:13.5px;color:var(--hk-text-2);padding:0 0 16px;margin:0;line-height:1.85}
+
+/* ===== CTA band ===== */
+.hk-cta{
+  background:linear-gradient(120deg,#1c1315 0%,#201416 50%,#181a1e 100%);
+  border:1px solid #3a2224;border-radius:18px;padding:34px 32px;
+  display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+}
+.hk-cta h2{font-size:clamp(20px,2.4vw,26px);margin-bottom:8px}
+.hk-cta p{color:var(--hk-text-2);font-size:14px;margin:0;max-width:44em}
+.hk-cta__actions{display:flex;gap:11px;flex-wrap:wrap}
+
+/* ===== footer ===== */
+.hk-footer{border-top:1px solid var(--hk-line);background:#0c0d0f;margin-top:20px;padding:46px 0 26px}
+.hk-footer__grid{display:grid;grid-template-columns:minmax(0,4fr) repeat(3,minmax(0,2fr));gap:32px}
+.hk-footer__about p{font-size:13px;color:var(--hk-text-3);margin:10px 0 0;max-width:30em;line-height:1.8}
+.hk-footer h4{font-size:13.5px;margin-bottom:12px;color:var(--hk-text)}
+.hk-footer__links{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.hk-footer__links a{font-size:13px;color:var(--hk-text-3)}
+.hk-footer__links a:hover{color:var(--hk-accent)}
+.hk-footer__bottom{
+  margin-top:34px;padding-top:20px;border-top:1px solid var(--hk-line-soft);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12px;color:var(--hk-text-3);
+}
+
+/* ===== toast / modal / top ===== */
+.hk-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#23262b;color:#fff;border:1px solid #3a3f47;border-radius:10px;
+  padding:11px 20px;font-size:13.5px;box-shadow:0 18px 40px -18px #000;
+  opacity:0;pointer-events:none;transition:.28s;z-index:120;
+}
+.hk-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.hk-modal{
+  position:fixed;inset:0;background:rgba(6,7,8,.72);backdrop-filter:blur(4px);
+  display:none;place-items:center;padding:20px;z-index:130;
+}
+.hk-modal.is-open{display:grid}
+.hk-modal__box{
+  background:var(--hk-surface);border:1px solid var(--hk-line);border-radius:16px;
+  width:100%;max-width:520px;padding:26px;position:relative;max-height:86vh;overflow:auto;
+}
+.hk-modal__box h3{font-size:18px;margin-bottom:8px}
+.hk-modal__box p{font-size:13.5px;color:var(--hk-text-2)}
+.hk-modal__close{
+  position:absolute;right:14px;top:14px;background:var(--hk-surface-2);
+  border:1px solid var(--hk-line);color:var(--hk-text-2);width:30px;height:30px;
+  border-radius:8px;display:grid;place-items:center;font-size:15px;
+}
+.hk-modal__close:hover{color:#fff}
+.hk-field{width:100%;background:var(--hk-bg);border:1px solid var(--hk-line);border-radius:9px;color:var(--hk-text);padding:10px 13px;font-size:13.5px;margin-bottom:12px;font-family:inherit}
+.hk-field:focus{outline:none;border-color:var(--hk-accent)}
+.hk-totop{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:12px;
+  background:var(--hk-surface-2);border:1px solid var(--hk-line);color:var(--hk-text);
+  display:grid;place-items:center;opacity:0;pointer-events:none;transition:.26s;z-index:90;
+  box-shadow:0 12px 30px -14px #000;
+}
+.hk-totop.is-show{opacity:1;pointer-events:auto}
+.hk-totop:hover{border-color:var(--hk-accent);color:var(--hk-accent)}
+
+.hk-searchhint{
+  margin-top:14px;font-size:13px;color:var(--hk-text-2);
+  background:var(--hk-surface);border:1px solid var(--hk-line);border-radius:9px;
+  padding:10px 14px;display:none;
+}
+.hk-searchhint.is-show{display:block}
+.hk-mark{background:rgba(255,59,48,.28);color:#fff;border-radius:3px;padding:0 2px}
+
+/* ===== responsive ===== */
+@media (max-width:1024px){
+  :root{--hk-sticky:100px}
+  .hk-hero__grid{grid-template-columns:minmax(0,1fr);gap:32px}
+  .hk-hero__chip{left:auto;right:14px;top:-12px}
+  .hk-focusgrid{grid-template-columns:minmax(0,1fr)}
+  .hk-topicgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hk-deep{grid-template-columns:minmax(0,1fr)}
+  .hk-deep__aside{position:static}
+  .hk-footer__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hk-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:820px){
+  .hk-header__inner{gap:12px}
+  .hk-navtoggle{display:grid;place-items:center;margin-left:auto}
+  .hk-nav{
+    order:10;flex-basis:100%;display:none;flex-direction:column;align-items:stretch;
+    gap:2px;padding:10px 0 4px;border-top:1px solid var(--hk-line);margin-top:8px;
+  }
+  .hk-nav.is-open{display:flex}
+  .hk-nav__link{padding:10px 12px}
+  .hk-header__tools{order:11;flex-basis:100%;display:none;padding-bottom:10px}
+  .hk-header__tools.is-open{display:flex}
+  .hk-search{flex:1 1 auto}
+  .hk-search__input{width:100%}
+  .hk-search__input:focus{width:100%}
+  .hk-notice__inner{padding:8px 16px}
+  .hk-container{padding:0 16px}
+  .hk-authors{grid-template-columns:minmax(0,1fr)}
+  .hk-reviews{columns:1}
+  .hk-vrow{grid-template-columns:minmax(0,1fr)}
+  .hk-vrow__side{align-items:flex-start;flex-direction:row;flex-wrap:wrap;gap:12px}
+  .hk-section{padding:40px 0}
+  .hk-cta{padding:26px 22px}
+  .hk-dyn{grid-template-columns:minmax(0,1fr);gap:5px}
+  .hk-dyn__pill{justify-self:start}
+}
+@media (max-width:560px){
+  .hk-topicgrid{grid-template-columns:minmax(0,1fr)}
+  .hk-hero__stats{gap:20px}
+  .hk-hero h1{font-size:36px}
+  .hk-footer__grid{grid-template-columns:minmax(0,1fr)}
+  .hk-partners{grid-template-columns:minmax(0,1fr)}
+  .hk-brand__sub{display:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="hk-skip" href="#hk-main">跳转到主要内容</a>
+
+<div class="hk-topwrap">
+  <div class="hk-notice" role="region" aria-label="官方公告">
+    <div class="hk-notice__inner">
+      <span class="hk-notice__tag">官方发布</span>
+      <div class="hk-notice__track">
+        <span class="hk-notice__item"><b>11月20日</b>「真实记录与影像边界」专题企划上线，首发 12 条原创影像</span>
+        <span class="hk-notice__item"><b>11月18日</b> 年度创作挑战赛开启报名，专题页开放高清素材下载</span>
+        <span class="hk-notice__item"><b>11月15日</b> 创作者激励计划 3.0 发布，新增品质分级与口碑权重</span>
+        <span class="hk-notice__item"><b>11月12日</b> 官方发布《内容真实性标注指引》第二版，社区投票收集完成</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="hk-header">
+    <div class="hk-header__inner">
+      <a class="hk-brand" href="#hk-top" aria-label="五一黑料视频官方网站首页">
+        <span class="hk-brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5l11 6.5-11 6.5V5.5z" fill="#fff"/></svg>
+        </span>
+        <span>
+          <span class="hk-brand__name">五一黑料<span>视频</span></span>
+          <span class="hk-brand__sub">官方影像平台</span>
+        </span>
+      </a>
+
+      <nav class="hk-nav" id="hk-nav" aria-label="主导航">
+        <a class="hk-nav__link is-active" href="#hk-top">首页</a>
+        <a class="hk-nav__link" href="#hk-精选内容">精选内容</a>
+        <a class="hk-nav__link" href="#hk-专题企划">专题企划</a>
+        <a class="hk-nav__link" href="#hk-深度解析">深度解析</a>
+        <a class="hk-nav__link" href="#hk-创作者">创作者</a>
+        <a class="hk-nav__link" href="#hk-口碑">用户口碑</a>
+        <a class="hk-nav__link" href="#hk-动态">企业动态</a>
+        <a class="hk-nav__link" href="#hk-faq">帮助中心</a>
+      </nav>
+
+      <div class="hk-header__tools" id="hk-tools">
+        <div class="hk-search" role="search">
+          <input class="hk-search__input" id="hk-search-input" type="search" placeholder="搜索视频、创作者、专题" aria-label="站内搜索">
+          <button class="hk-search__btn" id="hk-search-btn" type="button" aria-label="执行搜索">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          </button>
+        </div>
+        <button class="hk-btn hk-btn--primary hk-btn--sm" id="hk-submit-btn" type="button">投稿入口</button>
+      </div>
+
+      <button class="hk-navtoggle" id="hk-navtoggle" type="button" aria-expanded="false" aria-controls="hk-nav" aria-label="展开导航菜单">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="hk-main">
+  <div id="hk-top"></div>
+
+  <!-- HERO -->
+  <section class="hk-hero" aria-labelledby="hk-h1">
+    <div class="hk-container">
+      <div class="hk-hero__grid">
+        <div class="hk-hero__text">
+          <span class="hk-hero__eyebrow">真实记录 · 深度影像 · 官方出品</span>
+          <h1 id="hk-h1">五一黑料视频</h1>
+          <p class="hk-hero__lead">
+            一个把<strong>真实记录</strong>当作底线的原创影像平台。我们不做情绪化剪辑，只做有出处、有来路、有后续的高清内容。
+            从城市现场到幕后求证，从个人讲述到行业观察，<strong>五一黑料视频</strong>用企业级的内容标准，为创作者提供一个值得信赖的社区。
+          </p>
+          <div class="hk-hero__actions">
+            <a class="hk-btn hk-btn--primary" href="#hk-精选内容">观看本期精选</a>
+            <a class="hk-btn hk-btn--ghost" href="#hk-专题企划">进入专题企划</a>
+            <button class="hk-btn hk-btn--ghost" id="hk-hero-share" type="button">分享平台</button>
+          </div>
+          <div class="hk-hero__stats">
+            <div class="hk-stat">
+              <div class="hk-stat__num"><span class="hk-countup" data-target="1268">0</span><i>+</i></div>
+              <div class="hk-stat__label">上线原创视频</div>
+            </div>
+            <div class="hk-stat">
+              <div class="hk-stat__num"><span class="hk-countup" data-target="94">0</span><i>%</i></div>
+              <div class="hk-stat__label">内容溯源完整度</div>
+            </div>
+            <div class="hk-stat">
+              <div class="hk-stat__num"><span class="hk-countup" data-target="37">0</span><i>万</i></div>
+              <div class="hk-stat__label">社区创作者关注</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hk-hero__visual">
+          <div class="hk-hero__frame">
+            <svg viewBox="0 0 640 440" role="img" aria-label="五一黑料视频官方主视觉：深夜剪辑室中多屏回溯现场素材">
+              <defs>
+                <linearGradient id="hkHeroBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#1a1c20"/><stop offset="1" stop-color="#0d0e10"/>
+                </linearGradient>
+                <linearGradient id="hkHeroScreen" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#2b1416"/><stop offset="1" stop-color="#131518"/>
+                </linearGradient>
+                <linearGradient id="hkHeroGlow" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ff3b30" stop-opacity=".55"/><stop offset="1" stop-color="#ff3b30" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="440" fill="url(#hkHeroBg)"/>
+              <g opacity=".35" stroke="#2a2e35" stroke-width="1">
+                <path d="M0 330h640M0 370h640M0 410h640"/>
+                <path d="M80 300v140M200 300v140M320 300v140M440 300v140M560 300v140"/>
+              </g>
+              <rect x="46" y="52" width="330" height="200" rx="10" fill="url(#hkHeroScreen)" stroke="#3a2729"/>
+              <rect x="62" y="68" width="298" height="152" rx="6" fill="#111316"/>
+              <g stroke="#4a1f21" stroke-width="1.5">
+                <path d="M62 150h298M130 68v152M250 68v152"/>
+              </g>
+              <circle cx="135" cy="112" r="20" fill="none" stroke="#ff3b30" stroke-width="2"/>
+              <path d="M130 102l14 10-14 10z" fill="#ff3b30"/>
+              <rect x="172" y="94" width="96" height="9" rx="4.5" fill="#3a3f47"/>
+              <rect x="172" y="112" width="70" height="8" rx="4" fill="#2b3038"/>
+              <rect x="268" y="150" width="92" height="60" rx="5" fill="#1c2024" stroke="#333a42"/>
+              <circle cx="291" cy="172" r="10" fill="#ffd166" opacity=".6"/>
+              <path d="M282 196l16-14 16 14" stroke="#4a525c" stroke-width="2" fill="none"/>
+              <rect x="396" y="40" width="200" height="122" rx="10" fill="#1a1d21" stroke="#2e333b"/>
+              <rect x="412" y="56" width="168" height="64" rx="5" fill="#141619"/>
+              <path d="M420 106l22-24 20 18 26-30 30 36" stroke="#ff3b30" stroke-width="2" fill="none" opacity=".8"/>
+              <rect x="412" y="130" width="78" height="7" rx="3.5" fill="#333940"/>
+              <rect x="500" y="130" width="52" height="7" rx="3.5" fill="#2a2f36"/>
+              <rect x="396" y="180" width="200" height="150" rx="10" fill="#191c20" stroke="#2e333b"/>
+              <g fill="#2b3138">
+                <rect x="412" y="196" width="168" height="10" rx="5"/>
+                <rect x="412" y="216" width="132" height="8" rx="4"/>
+                <rect x="412" y="232" width="150" height="8" rx="4"/>
+                <rect x="412" y="248" width="106" height="8" rx="4"/>
+              </g>
+              <rect x="412" y="274" width="168" height="42" rx="6" fill="#2b1416" stroke="#4a1f21"/>
+              <circle cx="432" cy="295" r="8" fill="#ff3b30"/>
+              <rect x="450" y="288" width="98" height="7" rx="3.5" fill="#4a2a2c"/>
+              <rect x="450" y="301" width="66" height="6" rx="3" fill="#3a2a2c"/>
+              <rect x="46" y="278" width="330" height="118" rx="10" fill="#171a1e" stroke="#2e333b"/>
+              <g>
+                <rect x="64" y="296" width="140" height="82" rx="6" fill="#121417"/>
+                <path d="M64 360l34-26 26 20 34-32 46 38" stroke="#ff3b30" stroke-width="2" fill="none" opacity=".7"/>
+                <rect x="220" y="296" width="140" height="10" rx="5" fill="#30363e"/>
+                <rect x="220" y="316" width="118" height="8" rx="4" fill="#282d34"/>
+                <rect x="220" y="332" width="132" height="8" rx="4" fill="#282d34"/>
+                <rect x="220" y="348" width="88" height="8" rx="4" fill="#282d34"/>
+                <rect x="220" y="364" width="140" height="14" rx="7" fill="#4a1f21"/>
+              </g>
+              <rect x="0" y="0" width="640" height="440" fill="url(#hkHeroGlow)" opacity=".35"/>
+            </svg>
+            <span class="hk-hero__play"><span aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="#fff"><path d="M8 5l12 7-12 7z"/></svg>
+            </span>本期主推 · 04:52</span>
+            <span class="hk-hero__caption">官方出品 · 高清 1080P</span>
+          </div>
+          <div class="hk-hero__chip">
+            <b>溯源档案已上线</b>
+            <span>每条影像附原始时间与来源</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精选内容：焦点 + 文字列表 -->
+  <section class="hk-section" id="hk-精选内容" aria-labelledby="hk-h2-featured">
+    <div class="hk-container">
+      <div class="hk-sec-head">
+        <div class="hk-sec-head__left">
+          <span class="hk-kicker">精选内容</span>
+          <h2 class="hk-h2" id="hk-h2-featured">五一黑料视频本期焦点与视频索引</h2>
+          <p class="hk-sec-sub">按内容价值而非流量排序。本期焦点讲清一条影像如何被核实、被剪辑、被看见，其余条目以文字索引呈现，方便快速判断要不要点开。</p>
+        </div>
+        <a class="hk-more" href="#hk-专题企划">查看全部专题 →</a>
+      </div>
+
+      <div class="hk-focusgrid">
+        <article class="hk-card hk-focus">
+          <div class="hk-focus__media">
+            <span class="hk-badge">本期焦点</span>
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点视频封面：凌晨街角的多机位现场与被标注的时间轴">
+              <defs>
+                <linearGradient id="hkF1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#241417"/><stop offset="1" stop-color="#101216"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#hkF1)"/>
+              <g opacity=".5" stroke="#33232a" stroke-width="1">
+                <path d="M0 250h640M0 290h640M0 330h640"/>
+              </g>
+              <rect x="34" y="38" width="300" height="180" rx="8" fill="#15171b" stroke="#3a2729"/>
+              <rect x="48" y="52" width="272" height="152" rx="4" fill="#0e1013"/>
+              <g stroke="#3b1f22" stroke-width="1.4">
+                <path d="M48 130h272M140 52v152M250 52v152"/>
+              </g>
+              <circle cx="188" cy="128" r="26" fill="none" stroke="#ff3b30" stroke-width="2"/>
+              <path d="M181 116l18 12-18 12z" fill="#ff3b30"/>
+              <rect x="356" y="38" width="250" height="84" rx="8" fill="#181b1f" stroke="#2e333b"/>
+              <rect x="372" y="54" width="150" height="9" rx="4.5" fill="#3a4048"/>
+              <rect x="372" y="74" width="200" height="8" rx="4" fill="#2b3038"/>
+              <rect x="372" y="92" width="120" height="8" rx="4" fill="#2b3038"/>
+              <rect x="356" y="140" width="250" height="150" rx="8" fill="#181b1f" stroke="#2e333b"/>
+              <g fill="#2a3037">
+                <rect x="372" y="156" width="218" height="9" rx="4.5"/>
+                <rect x="372" y="176" width="176" height="8" rx="4"/>
+                <rect x="372" y="192" width="198" height="8" rx="4"/>
+              </g>
+              <rect x="372" y="216" width="110" height="56" rx="5" fill="#121417"/>
+              <path d="M372 252l22-18 18 14 22-22 40 26" stroke="#ffd166" stroke-width="2" fill="none" opacity=".8"/>
+              <rect x="496" y="216" width="94" height="56" rx="5" fill="#2b1416" stroke="#4a1f21"/>
+              <circle cx="516" cy="240" r="8" fill="none" stroke="#ff3b30" stroke-width="2"/>
+              <circle cx="516" cy="240" r="2.5" fill="#ff3b30"/>
+              <rect x="532" y="234" width="46" height="6" rx="3" fill="#4a2a2c"/>
+              <rect x="532" y="246" width="32" height="6" rx="3" fill="#3a2a2c"/>
+              <rect x="34" y="246" width="300" height="76" rx="8" fill="#171a1e" stroke="#2e333b"/>
+              <g stroke="#333a42" stroke-width="1">
+                <path d="M56 300h256" stroke-width="3" stroke-linecap="round"/>
+                <path d="M96 292v16M156 292v16M216 292v16M276 292v16"/>
+              </g>
+              <circle cx="196" cy="300" r="6" fill="#ff3b30"/>
+              <rect x="56" y="262" width="86" height="8" rx="4" fill="#3a4048"/>
+              <rect x="152" y="262" width="60" height="8" rx="4" fill="#2b3038"/>
+            </svg>
+          </div>
+          <div class="hk-focus__body">
+            <div class="hk-tags">
+              <span class="hk-tag">深度测评</span>
+              <span class="hk-tag">品牌故事</span>
+              <span class="hk-tag">现场求证</span>
+            </div>
+            <h3>一条影像的来路：从凌晨街角到可核验的 4 分 52 秒</h3>
+            <p>摄制组跟着三位目击者复走同一条路，把手机原始素材、公共监控时间与采访录音逐帧对齐。片中所有画面保留原始时间码，关键节点以字幕标注出处，让“黑料”回到可讨论、可求证的事实层面。</p>
+            <div class="hk-meta">
+              <span class="hk-meta__author"><span class="hk-avatarball" style="background:#ff3b30">林</span>林述白</span>
+              <span>播放 128.4 万</span>
+              <span>点赞 3.2 万</span>
+              <span>收藏 1.8 万</span>
+            </div>
+            <div class="hk-actions">
+              <button class="hk-btn hk-btn--primary hk-btn--sm hk-like" type="button" data-liked="false" aria-pressed="false">赞同 <span class="hk-like__num">3.2万</span></button>
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-fav" type="button" data-faved="false" aria-pressed="false">收藏</button>
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-copy" type="button" data-title="一条影像的来路：从凌晨街角到可核验的 4 分 52 秒">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="hk-card hk-minilist">
+          <div class="hk-mini">
+            <span class="hk-mini__idx">02</span>
+            <div class="hk-mini__main">
+              <h4>被剪掉的三十秒：字幕组如何在两小时内完成时间校对</h4>
+              <p>幕后记录 · 讲清一条视频从素材到成片的执行细节</p>
+              <div class="hk-mini__foot"><b>沈拾光</b><span>播放 42.6 万</span><span>点赞 8.9 千</span></div>
+            </div>
+          </div>
+          <div class="hk-mini">
+            <span class="hk-mini__idx">03</span>
+            <div class="hk-mini__main">
+              <h4>城市夜行地图：五个路口的灯比人更早记得事情</h4>
+              <p>城市探索 · 用固定机位记录同一条街的七十二小时</p>
+              <div class="hk-mini__foot"><b>周鹭</b><span>播放 31.2 万</span><span>点赞 6.4 千</span></div>
+            </div>
+          </div>
+          <div class="hk-mini">
+            <span class="hk-mini__idx">04</span>
+            <div class="hk-mini__main">
+              <h4>不做标题党：一条负面内容的六个改写版本对照</h4>
+              <p>经验分享 · 编辑组内部训练素材首次公开</p>
+              <div class="hk-mini__foot"><b>编辑组·阿岚</b><span>播放 27.8 万</span><span>点赞 5.1 千</span></div>
+            </div>
+          </div>
+          <div class="hk-mini">
+            <span class="hk-mini__idx">05</span>
+            <div class="hk-mini__main">
+              <h4>镜头背后的三个人：摄影、录音与事实核查如何对表</h4>
+              <p>人物访谈 · 一线小团队的分工与争执</p>
+              <div class="hk-mini__foot"><b>孟岸</b><span>播放 19.5 万</span><span>点赞 4.2 千</span></div>
+            </div>
+          </div>
+          <div class="hk-mini">
+            <span class="hk-mini__idx">06</span>
+            <div class="hk-mini__main">
+              <h4>素材归档的一百天：我们为什么坚持给每条视频留底</h4>
+              <p>行业观察 · 内容溯源的流程与成本拆解</p>
+              <div class="hk-mini__foot"><b>林述白</b><span>播放 16.3 万</span><span>点赞 3.7 千</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hk-searchhint" id="hk-search-hint" role="status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="hk-section hk-section--tight" id="hk-专题企划" aria-labelledby="hk-h2-topic">
+    <div class="hk-container">
+      <div class="hk-sec-head">
+        <div class="hk-sec-head__left">
+          <span class="hk-kicker">专题企划</span>
+          <h2 class="hk-h2" id="hk-h2-topic">五一黑料视频的三条长期专题线</h2>
+          <p class="hk-sec-sub">专题不是合集，而是一段时间内持续更新的问题意识。每个专题都有明确更新节奏与内容条目，接受社区投票与公开讨论。</p>
+        </div>
+      </div>
+      <div class="hk-topicgrid">
+        <article class="hk-card hk-topic">
+          <div class="hk-topic__media">
+            <svg viewBox="0 0 480 270" role="img" aria-label="专题封面：被放大的监控画面与标注线构成的事实核查台">
+              <rect width="480" height="270" fill="#15171b"/>
+              <rect x="26" y="26" width="250" height="150" rx="7" fill="#0f1114" stroke="#3a2729"/>
+              <g stroke="#3b1f22" stroke-width="1.2"><path d="M26 100h250M150 26v150"/></g>
+              <circle cx="150" cy="100" r="34" fill="none" stroke="#ff3b30" stroke-width="2" stroke-dasharray="6 5"/>
+              <rect x="60" y="140" width="80" height="8" rx="4" fill="#333a42"/>
+              <rect x="292" y="26" width="162" height="70" rx="7" fill="#181b1f" stroke="#2e333b"/>
+              <rect x="306" y="42" width="110" height="8" rx="4" fill="#3a4048"/>
+              <rect x="306" y="58" width="132" height="7" rx="3.5" fill="#2b3038"/>
+              <rect x="306" y="74" width="88" height="7" rx="3.5" fill="#2b3038"/>
+              <rect x="292" y="112" width="162" height="64" rx="7" fill="#2b1416" stroke="#4a1f21"/>
+              <rect x="306" y="128" width="120" height="8" rx="4" fill="#4a2a2c"/>
+              <rect x="306" y="146" width="96" height="8" rx="4" fill="#3a2a2c"/>
+              <rect x="26" y="196" width="428" height="48" rx="7" fill="#181b1f" stroke="#2e333b"/>
+              <g fill="#2a3037">
+                <rect x="44" y="212" width="180" height="7" rx="3.5"/>
+                <rect x="44" y="226" width="120" height="6" rx="3"/>
+                <rect x="250" y="212" width="80" height="7" rx="3.5" fill="#4a1f21"/>
+                <rect x="250" y="226" width="60" height="6" rx="3" fill="#3a2a2c"/>
+              </g>
+            </svg>
+          </div>
+          <div class="hk-topic__body">
+            <span class="hk-status hk-status--hot">更新中 · 第 4 期</span>
+            <h3>《真实记录与影像边界》</h3>
+            <p>讨论一条敏感影像在公共传播中应该被如何呈现，以及平台需要承担什么样的编辑责任。</p>
+            <ul class="hk-topic__list">
+              <li>01 · 打码与留白的尺度：三个编辑决策现场</li>
+              <li>02 · 当事人都同意的镜头，是否就一定适合传播</li>
+              <li>03 · 影像边界工作坊：开放给社区的共同讨论</li>
+            </ul>
+            <div class="hk-topic__foot"><span>12 条原创影像</span><span>更新至 11月20日</span></div>
+          </div>
+        </article>
+
+        <article class="hk-card hk-topic">
+          <div class="hk-topic__media">
+            <svg viewBox="0 0 480 270" role="img" aria-label="专题封面：夜行街道的灯带与行人剪影构成城市观察图">
+              <rect width="480" height="270" fill="#111417"/>
+              <rect y="196" width="480" height="74" fill="#171a1e"/>
+              <g stroke="#242a31" stroke-width="1"><path d="M0 232h480M0 258h480"/></g>
+              <g fill="#1f2429">
+                <rect x="24" y="88" width="70" height="108"/>
+                <rect x="110" y="60" width="54" height="136"/>
+                <rect x="180" y="102" width="80" height="94"/>
+                <rect x="278" y="72" width="62" height="124"/>
+                <rect x="356" y="112" width="94" height="84"/>
+              </g>
+              <g fill="#ffd166" opacity=".75">
+                <rect x="40" y="104" width="12" height="10" rx="2"/>
+                <rect x="62" y="126" width="12" height="10" rx="2"/>
+                <rect x="124" y="82" width="12" height="10" rx="2"/>
+                <rect x="146" y="110" width="12" height="10" rx="2"/>
+                <rect x="292" y="94" width="12" height="10" rx="2"/>
+              </g>
+              <g fill="#ff3b30">
+                <circle cx="214" cy="182" r="5"/>
+                <rect x="236" y="168" width="5" height="22" rx="2.5"/>
+                <circle cx="392" cy="180" r="5"/>
+                <rect x="414" y="164" width="5" height="24" rx="2.5"/>
+              </g>
+              <g stroke="#333a42" stroke-width="2"><path d="M0 196h480"/></g>
+            </svg>
+          </div>
+          <div class="hk-topic__body">
+            <span class="hk-status">持续更新 · 第 2 期</span>
+            <h3>《城市夜行地图》</h3>
+            <p>用固定机位与步行镜头，记录城市在夜间的真实状态，关注街角、便利店与通勤尾班车。</p>
+            <ul class="hk-topic__list">
+              <li>01 · 末班公交上的十张面孔</li>
+              <li>02 · 便利店凌晨三点的交接班记录</li>
+              <li>03 · 一条街七十二小时的灯色变化</li>
+            </ul>
+            <div class="hk-topic__foot"><span>9 条原创影像</span><span>每周三更新</span></div>
+          </div>
+        </article>
+
+        <article class="hk-card hk-topic">
+          <div class="hk-topic__media">
+            <svg viewBox="0 0 480 270" role="img" aria-label="专题封面：桌面上的脚本纸张、时间码与剪辑轨道">
+              <rect width="480" height="270" fill="#1a1c20"/>
+              <rect x="30" y="34" width="200" height="200" rx="6" fill="#20242a" stroke="#31373f" transform="rotate(-4 130 134)"/>
+              <g fill="#2c323a" transform="rotate(-4 130 134)">
+                <rect x="50" y="58" width="150" height="9" rx="4.5"/>
+                <rect x="50" y="78" width="118" height="8" rx="4"/>
+                <rect x="50" y="96" width="136" height="8" rx="4"/>
+                <rect x="50" y="114" width="90" height="8" rx="4"/>
+                <rect x="50" y="140" width="150" height="8" rx="4"/>
+                <rect x="50" y="158" width="104" height="8" rx="4"/>
+              </g>
+              <rect x="160" y="60" width="290" height="60" rx="6" fill="#15181c" stroke="#2e333b"/>
+              <g fill="#3a4048"><rect x="176" y="74" width="120" height="7" rx="3.5"/><rect x="176" y="90" width="180" height="7" rx="3.5"/><rect x="176" y="104" width="90" height="6" rx="3"/></g>
+              <rect x="160" y="136" width="290" height="98" rx="6" fill="#171a1e" stroke="#2e333b"/>
+              <g stroke="#2f353d" stroke-width="1">
+                <path d="M176 166h258M176 190h258M176 214h258"/>
+              </g>
+              <rect x="176" y="160" width="86" height="12" rx="3" fill="#4a1f21"/>
+              <rect x="272" y="184" width="60" height="12" rx="3" fill="#333a42"/>
+              <rect x="342" y="208" width="92" height="12" rx="3" fill="#4a1f21"/>
+              <circle cx="404" cy="152" r="4" fill="#ff3b30"/>
+            </svg>
+          </div>
+          <div class="hk-topic__body">
+            <span class="hk-status">征集中 · 第 1 期</span>
+            <h3>《剪辑台前的决定》</h3>
+            <p>把剪辑过程中的取舍摊开来讲：删掉什么、保留什么、为什么留下这段沉默。</p>
+            <ul class="hk-topic__list">
+              <li>01 · 一分钟成片里的四次自我否定</li>
+              <li>02 · 声音先行：先做音轨再补画面</li>
+              <li>03 · 社区投稿：你最舍不得删掉的一帧</li>
+            </ul>
+            <div class="hk-topic__foot"><span>6 条原创影像</span><span>开放投稿中</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 / 关键词解析 800+ 字 -->
+  <section class="hk-section" id="hk-深度解析" aria-labelledby="hk-h2-deep">
+    <div class="hk-container">
+      <div class="hk-sec-head">
+        <div class="hk-sec-head__left">
+          <span class="hk-kicker">关键词解析</span>
+          <h2 class="hk-h2" id="hk-h2-deep">五一黑料视频是什么：平台定位、内容标准与社区责任</h2>
+          <p class="hk-sec-sub">关于这个品牌的核心问题，我们愿意用一整篇正文来讲清楚，而不是两句话带过。</p>
+        </div>
+      </div>
+
+      <div class="hk-deep">
+        <aside class="hk-deep__aside">
+          <div class="hk-panel">
+            <h3>本文目录</h3>
+            <ul class="hk-deep__toc">
+              <li><a href="#hk-p-1">一、品牌定位：为什么叫这个名字</a></li>
+              <li><a href="#hk-p-2">二、内容标准：一条视频的准入清单</a></li>
+              <li><a href="#hk-p-3">三、创作者生态：社区如何持续运转</a></li>
+              <li><a href="#hk-p-4">四、企业责任：我们不做的事情</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="hk-prose">
+          <h3 id="hk-p-1">一、品牌定位：为什么叫这个名字</h3>
+          <p>
+            “五一黑料视频”这个名字，第一眼看上去并不温和。很多人第一次听到会以为这是一个追逐八卦的号，但我们在命名时想表达的其实是另一层意思：
+            <strong>“五一”是劳动、是集体、是普通人日常里最实在的那一部分；“黑料”在行业语境里通常指未经整理、未经证实的碎片信息。</strong>
+            我们把这个词拿到台面上，是因为相信观众并不需要被保护在真空里，他们需要的是把碎片整理成可核验事实的能力。
+          </p>
+          <p>
+            因此，作为一家持续运营的影像内容企业，五一黑料视频并没有把自己定义成“爆料平台”，而是一个<strong>以真实记录为方法、以核验流程为标准的原创视频门户</strong>。
+            我们把每条内容都当成一件需要被交代清楚来路的作品：谁拍的、什么时候拍的、素材是否完整、有没有被剪辑二次加工、关键结论有没有第二个信源支持。
+            这些信息会直接写在视频页的溯源档案里，观众不需要相信我们的口吻，只需要看我们交出的档案。
+          </p>
+          <p>
+            官方网站上线以来，平台逐步形成了三条稳定的内容线：现场记录、人物访谈与行业观察。三条线共用同一套编辑标准，但呈现方式不同——
+            现场记录强调时间与位置，人物访谈强调表达的完整性与原声，行业观察强调数据来源与对照关系。这样做的好处是，观众看到一个标题时，大致能预判内容形态，
+            也知道该用什么样的眼光去判断它。这是内容生态能否长期健康的基础，而不是靠某一条爆款维持热度。
+          </p>
+
+          <figure class="hk-figure">
+            <svg viewBox="0 0 900 400" role="img" aria-label="内容标准示意图：素材、核验、剪辑、发布四环节并列">
+              <rect width="900" height="400" fill="#15171b"/>
+              <g stroke="#2a2e35" stroke-width="1"><path d="M60 330h780"/></g>
+              <g>
+                <rect x="60" y="120" width="170" height="160" rx="10" fill="#1c1f24" stroke="#31373f"/>
+                <circle cx="145" cy="170" r="26" fill="none" stroke="#ff3b30" stroke-width="2"/>
+                <path d="M134 160l20 10-20 10z" fill="#ff3b30"/>
+                <rect x="90" y="214" width="110" height="8" rx="4" fill="#3a4048"/>
+                <rect x="90" y="232" width="80" height="8" rx="4" fill="#2b3038"/>
+                <text x="145" y="278" fill="#a3a9b3" font-size="13" text-anchor="middle" font-family="sans-serif">素材采集</text>
+              </g>
+              <g>
+                <rect x="260" y="120" width="170" height="160" rx="10" fill="#1c1f24" stroke="#31373f"/>
+                <circle cx="345" cy="170" r="26" fill="none" stroke="#ffd166" stroke-width="2"/>
+                <path d="M334 170l8 8 16-16" stroke="#ffd166" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+                <rect x="290" y="214" width="110" height="8" rx="4" fill="#3a4048"/>
+                <rect x="290" y="232" width="96" height="8" rx="4" fill="#2b3038"/>
+                <text x="345" y="278" fill="#a3a9b3" font-size="13" text-anchor="middle" font-family="sans-serif">事实核验</text>
+              </g>
+              <g>
+                <rect x="460" y="120" width="170" height="160" rx="10" fill="#1c1f24" stroke="#31373f"/>
+                <g stroke="#5c636d" stroke-width="2"><path d="M492 154h106M492 176h106M492 198h106"/></g>
+                <rect x="492" y="148" width="52" height="12" rx="3" fill="#4a1f21"/>
+                <rect x="556" y="170" width="36" height="12" rx="3" fill="#333a42"/>
+                <rect x="510" y="192" width="64" height="12" rx="3" fill="#ff3b30" opacity=".8"/>
+                <rect x="490" y="232" width="96" height="8" rx="4" fill="#2b3038"/>
+                <text x="545" y="278" fill="#a3a9b3" font-size="13" text-anchor="middle" font-family="sans-serif">编辑剪辑</text>
+              </g>
+              <g>
+                <rect x="660" y="120" width="170" height="160" rx="10" fill="#1c1f24" stroke="#31373f"/>
+                <rect x="692" y="150" width="106" height="66" rx="6" fill="#121417" stroke="#3a2729"/>
+                <path d="M706 198l18-18 14 12 18-20 26 26" stroke="#ff3b30" stroke-width="2" fill="none"/>
+                <rect x="692" y="230" width="76" height="8" rx="4" fill="#2b3038"/>
+                <rect x="692" y="248" width="98" height="8" rx="4" fill="#333a42"/>
+                <text x="745" y="278" fill="#a3a9b3" font-size="13" text-anchor="middle" font-family="sans-serif">公开呈现</text>
+              </g>
+              <g stroke="#3d434c" stroke-width="1.6" fill="none">
+                <path d="M230 200h28M430 200h28M630 200h28"/>
+              </g>
+            </svg>
+            <figcaption>平台对每条原创影像执行的四个固定环节，任一环节缺失即不予发布。</figcaption>
+          </figure>
+
+          <h3 id="hk-p-2">二、内容标准：一条视频的准入清单</h3>
+          <p>
+            很多内容平台把“真实”当作一个形容词，我们把它拆成了可执行的清单。第一条是<strong>原始素材留存</strong>：所有获得平台官方发布的内容，必须至少保留一份未经过调色、未压缩的原始文件，
+            留存期不低于两年。这意味着剪辑师在动第一刀之前，就要意识到自己是在处理证据，而不是处理素材。第二条是<strong>时间与地点可回溯</strong>：
+            拍摄时间以设备原始元数据为准，地点以可复核的场景特征为辅证，两者互相校验。若拍摄者无法提供完整信息，内容只能进入“未核验”栏目，不能出现在精选页面。
+          </p>
+          <p>
+            第三条是<strong>关键结论双信源</strong>。任何涉及具体人物、机构或事件的负面表述，都必须有两个相互独立的信源，且我们会在片尾字幕中说明信源类型——
+            是当事人陈述、第三方记录，还是公开可查的资料。我们不要求每条视频都得出“结论”，但要求每个结论都带着它的出处。第四条是<strong>当事方回应窗口</strong>：
+            在发布前，我们会通过官方渠道联系可能被提及的当事方，给予不少于四十八小时的回应时间，并将回应完整呈现在片中或视频说明中。
+            回应缺席本身也是信息，但我们不会用“对方拒绝回应”这样的模糊表述来代替具体过程。
+          </p>
+          <p>
+            这套标准听起来成本很高，确实是。一条十分钟的成片，背后可能是六到八小时的核验工作，以及更长的沟通时间。但我们认为这是值得的：
+            <strong>内容的品质来自流程，而不是来自姿态。</strong>当观众知道点击播放后会看到什么，平台与社区之间的信任才有基础。也正因为流程清晰，创作者在投稿时能明确自己需要补齐哪些材料，
+            减少来回沟通，提高整体供给的稳定性。上线至今，我们累计拒收或退回过数百条投稿，其中大部分是因为素材不完整或结论证据不足，而不是因为选题敏感——
+            这恰恰说明标准是可执行的，而不是一句口号。
+          </p>
+          <div class="hk-quote">
+            “我们并不生产真相，我们只是努力让每个判断都留下可以走回去的路。”——平台编辑组内部分享材料，2026 年 9 月
+          </div>
+
+          <h3 id="hk-p-3">三、创作者生态：社区如何持续运转</h3>
+          <p>
+            五一黑料视频的创作者社区不是“上传-分发-结束”的单向结构。我们把社区当作内容生产的共同作者：每季度开放一次选题工作坊，把下一阶段要跟进的方向提前公开，
+            由创作者认领或提出替代方案；每月公布一次内容复盘，包括播放、完播、收藏与举报数据，并解释某条内容为什么被推荐、某条为什么被降权。
+            这些做法让创作者能够理解平台的判断逻辑，而不是猜测规则。对于新加入的创作者，我们提供<strong>溯源模板、剪辑规范与版权自查清单</strong>，
+            这些材料可以在投稿入口直接下载，减少试错成本。
+          </p>
+          <p>
+            同时，社区活力也来自观众一侧。我们鼓励观众用“补充信息”的方式参与：一条视频下方可以提交线索、指出错误、提供后续进展，经编辑组核实后会在视频页更新日志中标注。
+            这类参与不会获得物质奖励，但会记录在用户主页的贡献档案中，并影响后续内容的优先观看权限。我们认为，<strong>真正的社区不是评论区热闹，而是有人愿意为准确性花时间。</strong>
+            这也是平台持续运营至今最重要的资产之一。
+          </p>
+
+          <h3 id="hk-p-4">四、企业责任：我们不做的事情</h3>
+          <p>
+            在一个注意力稀缺的环境里，明确“不做什么”比宣称“做什么”更重要。我们不使用受害者的痛苦作为封面卖点，不对未经核实的指控做标题化处理，
+            不在未成年人相关话题中使用惊吓式剪辑，也不参与任何形式的有偿删帖或流量交易。这些边界写进了平台的编辑手册，并在每次培训中重申。
+            作为一家有社会责任意识的内容企业，我们相信克制不是软弱，而是长期主义的一部分：<strong>只有当平台自己愿意被检验，它才有资格请创作者和观众相信它。</strong>
+          </p>
+          <p>
+            未来一年，五一黑料视频会把重心放在三件事上：完善溯源档案的公开程度、扩大创作者工作坊的规模、建立更透明的申诉与更正机制。
+            我们不追求成为最大的视频平台，但希望成为那个在需要判断时，人们愿意先打开看看的地方。这是这个品牌存在的理由，也是官方网站持续更新的意义。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频文字列表：更多条目 -->
+  <section class="hk-section hk-section--tight" id="hk-视频流" aria-labelledby="hk-h2-videos">
+    <div class="hk-container">
+      <div class="hk-sec-head">
+        <div class="hk-sec-head__left">
+          <span class="hk-kicker">内容索引</span>
+          <h2 class="hk-h2" id="hk-h2-videos">更多五一黑料视频原创条目</h2>
+          <p class="hk-sec-sub">以下为近期上线的文字索引，按上线时间排列。每一条都可以单独打开，附完整溯源信息与操作入口。</p>
+        </div>
+      </div>
+
+      <div class="hk-vlist">
+        <article class="hk-card hk-vrow">
+          <div>
+            <div class="hk-vrow__top">
+              <span class="hk-tag">教程干货</span><span class="hk-tag">剪辑方法</span>
+            </div>
+            <h3>三分钟讲清时间码对齐：手机素材与外部录音如何合轨</h3>
+            <p>用一条真实采访素材演示对齐流程，包括拍手板、波形比对与手动微调三种方法，附带常见错误对照表。</p>
+            <div class="hk-meta">
+              <span class="hk-meta__author"><span class="hk-avatarball" style="background:#5b8def">沈</span>沈拾光</span>
+              <span>播放 24.7 万</span><span>收藏 9.3 千</span>
+            </div>
+          </div>
+          <div class="hk-vrow__side">
+            <div class="hk-vrow__metrics">
+              <span class="hk-count">赞同 <b class="hk-num">6842</b></span>
+              <span class="hk-count">收藏 <b>9310</b></span>
+            </div>
+            <div style="display:flex;gap:7px;flex-wrap:wrap">
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-like" type="button" data-liked="false" aria-pressed="false">赞同</button>
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-fav" type="button" data-faved="false" aria-pressed="false">收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hk-card hk-vrow">
+          <div>
+            <div class="hk-vrow__top">
+              <span class="hk-tag">人物访谈</span><span class="hk-tag">行业观察</span>
+            </div>
+            <h3>采访一位做了十二年事实核查的编辑：耐心是一种专业能力</h3>
+            <p>四十分钟对谈剪辑为十二分钟，保留了受访者三次停顿与一次自我否定，因为那正是这份工作的真实节奏。</p>
+            <div class="hk-meta">
+              <span class="hk-meta__author"><span class="hk-avatarball" style="background:#f2a03d">孟</span>孟岸</span>
+              <span>播放 18.9 万</span><span>收藏 7.6 千</span>
+            </div>
+          </div>
+          <div class="hk-vrow__side">
+            <div class="hk-vrow__metrics">
+              <span class="hk-count">赞同 <b class="hk-num">5127</b></span>
+              <span class="hk-count">收藏 <b>7608</b></span>
+            </div>
+            <div style="display:flex;gap:7px;flex-wrap:wrap">
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-like" type="button" data-liked="false" aria-pressed="false">赞同</button>
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-fav" type="button" data-faved="false" aria-pressed="false">收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hk-card hk-vrow">
+          <div>
+            <div class="hk-vrow__top">
+              <span class="hk-tag">城市探索</span><span class="hk-tag">在地文化</span>
+            </div>
+            <h3>老市场拆迁前的最后一个清晨：摊主们自己拍的影像</h3>
+            <p>素材全部来自摊主手机，编辑组只做时序整理与字幕补充，保留了画面晃动和杂音，因为那是现场本身的一部分。</p>
+            <div class="hk-meta">
+              <span class="hk-meta__author"><span class="hk-avatarball" style="background:#48b39a">周</span>周鹭</span>
+              <span>播放 15.2 万</span><span>收藏 4.9 千</span>
+            </div>
+          </div>
+          <div class="hk-vrow__side">
+            <div class="hk-vrow__metrics">
+              <span class="hk-count">赞同 <b class="hk-num">4371</b></span>
+              <span class="hk-count">收藏 <b>4902</b></span>
+            </div>
+            <div style="display:flex;gap:7px;flex-wrap:wrap">
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-like" type="button" data-liked="false" aria-pressed="false">赞同</button>
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-fav" type="button" data-faved="false" aria-pressed="false">收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hk-card hk-vrow">
+          <div>
+            <div class="hk-vrow__top">
+              <span class="hk-tag">创作幕后</span><span class="hk-tag">经验分享</span>
+            </div>
+            <h3>我们如何给敏感画面打码：一个编辑小组的十五分钟例会</h3>
+            <p>把内部例会部分开放，展示打码尺度讨论的真实过程，包括三处意见分歧与最终处理方案。</p>
+            <div class="hk-meta">
+              <span class="hk-meta__author"><span class="hk-avatarball" style="background:#b06ad6">阿</span>编辑组·阿岚</span>
+              <span>播放 13.6 万</span><span>收藏 5.4 千</span>
+            </div>
+          </div>
+          <div class="hk-vrow__side">
+            <div class="hk-vrow__metrics">
+              <span class="hk-count">赞同 <b class="hk-num">3998</b></span>
+              <span class="hk-count">收藏 <b>5411</b></span>
+            </div>
+            <div style="display:flex;gap:7px;flex-wrap:wrap">
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-like" type="button" data-liked="false" aria-pressed="false">赞同</button>
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-fav" type="button" data-faved="false" aria-pressed="false">收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hk-card hk-vrow">
+          <div>
+            <div class="hk-vrow__top">
+              <span class="hk-tag">深度测评</span><span class="hk-tag">工具方法</span>
+            </div>
+            <h3>五款素材归档工具实测：哪一款适合小团队长期使用</h3>
+            <p>以半年真实使用记录为样本，从检索速度、元数据完整度、协作权限与迁移成本四个维度做对照，不推荐“最强”，只说明适用场景。</p>
+            <div class="hk-meta">
+              <span class="hk-meta__author"><span class="hk-avatarball" style="background:#ff3b30">林</span>林述白</span>
+              <span>播放 11.8 万</span><span>收藏 6.2 千</span>
+            </div>
+          </div>
+          <div class="hk-vrow__side">
+            <div class="hk-vrow__metrics">
+              <span class="hk-count">赞同 <b class="hk-num">3026</b></span>
+              <span class="hk-count">收藏 <b>6203</b></span>
+            </div>
+            <div style="display:flex;gap:7px;flex-wrap:wrap">
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-like" type="button" data-liked="false" aria-pressed="false">赞同</button>
+              <button class="hk-btn hk-btn--ghost hk-btn--sm hk-fav" type="button" data-faved="false" aria-pressed="false">收藏</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="hk-section" id="hk-创作者" aria-labelledby="hk-h2-creators">
+    <div class="hk-container">
+      <div class="hk-sec-head">
+        <div class="hk-sec-head__left">
+          <span class="hk-kicker">创作者</span>
+          <h2 class="hk-h2" id="hk-h2-creators">五一黑料视频的长期合作创作者</h2>
+          <p class="hk-sec-sub">他们不是“网红”，而是各自领域里愿意为一帧画面负责的人。点击可查看作者档案。</p>
+        </div>
+        <a class="hk-more" href="#hk-动态">创作者招募说明 →</a>
+      </div>
+
+      <div class="hk-authors">
+        <article class="hk-card hk-author">
+          <span class="hk-author__av" style="background:linear-gradient(135deg,#ff3b30,#8c1d18)" aria-hidden="true">林</span>
+          <div class="hk-author__main">
+            <div class="hk-author__name">林述白 <span class="hk-author__field">现场论证</span></div>
+            <div class="hk-author__nums"><span>作品 <b>86</b></span><span>关注 <b>12.4 万</b></span></div>
+            <p class="hk-author__bio">前纸媒调查记者，习惯先画时间轴再开机。擅长把复杂的多方叙述压缩成一条清晰线索，拍摄时坚持双机位留底，认为画面的可信度比冲击力重要。近一年专注城市公共空间议题。</p>
+            <button class="hk-btn hk-btn--ghost hk-btn--sm hk-author-btn" type="button" data-author="林述白" data-field="现场论证" data-works="86" data-fans="12.4 万" data-bio="曾长期从事调查报道，现专注影像化的事实呈现。拍摄时坚持双机位与原始素材留存，主张用流程而非情绪建立可信度。">查看档案</button>
+          </div>
+        </article>
+
+        <article class="hk-card hk-author">
+          <span class="hk-author__av" style="background:linear-gradient(135deg,#5b8def,#25407a)" aria-hidden="true">沈</span>
+          <div class="hk-author__main">
+            <div class="hk-author__name">沈拾光 <span class="hk-author__field">剪辑教学</span></div>
+            <div class="hk-author__nums"><span>作品 <b>112</b></span><span>关注 <b>18.7 万</b></span></div>
+            <p class="hk-author__bio">从广告后期转做内容教学，擅长把琐碎的操作细节讲成可以照着做的步骤。视频里几乎不露脸，靠屏幕录制和声音完成表达，被社区称为“最耐心的剪辑老师”。每月固定更新两期工具实测。</p>
+            <button class="hk-btn hk-btn--ghost hk-btn--sm hk-author-btn" type="button" data-author="沈拾光" data-field="剪辑教学" data-works="112" data-fans="18.7 万" data-bio="广告后期出身，专注剪辑流程与工具方法的系统化教学，强调可复现的操作步骤，反感只展示成片不展示过程的教程。">查看档案</button>
+          </div>
+        </article>
+
+        <article class="hk-card hk-author">
+          <span class="hk-author__av" style="background:linear-gradient(135deg,#48b39a,#1d5c4c)" aria-hidden="true">周</span>
+          <div class="hk-author__main">
+            <div class="hk-author__name">周鹭 <span class="hk-author__field">城市影像</span></div>
+            <div class="hk-author__nums"><span>作品 <b>64</b></span><span>关注 <b>9.6 万</b></span></div>
+            <p class="hk-author__bio">在南方城市长大，喜欢用固定机位等待一条街自己开口。作品多为长镜头与自然声，拍摄周期往往跨越数周。她认为城市的记忆藏在重复的日常里，而不是节庆当天的热闹。</p>
+            <button class="hk-btn hk-btn--ghost hk-btn--sm hk-author-btn" type="button" data-author="周鹭" data-field="城市影像" data-works="64" data-fans="9.6 万" data-bio="专注城市日常的长期记录，擅长固定机位与自然声采集，作品节奏缓慢但对细节极其敏感，主张让场景自己讲述。">查看档案</button>
+          </div>
+        </article>
+
+        <article class="hk-card hk-author">
+          <span class="hk-author__av" style="background:linear-gradient(135deg,#f2a03d,#8a5215)" aria-hidden="true">孟</span>
+          <div class="hk-author__main">
+            <div class="hk-author__name">孟岸 <span class="hk-author__field">人物访谈</span></div>
+            <div class="hk-author__nums"><span>作品 <b>47</b></span><span>关注 <b>7.2 万</b></span></div>
+            <p class="hk-author__bio">做过八年电台主播，习惯在对话里留白。拍摄访谈时很少打断受访者，愿意保留沉默和迟疑，因为那些部分往往比漂亮回答更接近真实。近年关注内容行业从业者的工作状态。</p>
+            <button class="hk-btn hk-btn--ghost hk-btn--sm hk-author-btn" type="button" data-author="孟岸" data-field="人物访谈" data-works="47" data-fans="7.2 万" data-bio="电台主播转型影像访谈，重视原声与停顿的价值，擅长长谈剪短而不损伤表达完整性，关注行业从业者的真实处境。">查看档案</button>
+          </div>
+        </article>
+
+        <article class="hk-card hk-author">
+          <span class="hk-author__av" style="background:linear-gradient(135deg,#b06ad6,#5b2d74)" aria-hidden="true">岚</span>
+          <div class="hk-author__main">
+            <div class="hk-author__name">编辑组·阿岚 <span class="hk-author__field">编辑规范</span></div>
+            <div class="hk-author__nums"><span>作品 <b>38</b></span><span>关注 <b>5.8 万</b></span></div>
+            <p class="hk-author__bio">平台编辑组成员，负责把内部流程翻译成外部能理解的语言。作品的镜头常在会议室和剪辑台之间切换，试图回答一个问题：一条内容在被看见之前，经历了多少次否定。</p>
+            <button class="hk-btn hk-btn--ghost hk-btn--sm hk-author-btn" type="button" data-author="编辑组·阿岚" data-field="编辑规范" data-works="38" data-fans="5.8 万" data-bio="长期负责内容规范梳理与内部流程公开，作品以会议记录、流程拆解为主，试图让平台的判断逻辑可被外部检验。">查看档案</button>
+          </div>
+        </article>
+
+        <article class="hk-card hk-author">
+          <span class="hk-author__av" style="background:linear-gradient(135deg,#6f7a8a,#333b45)" aria-hidden="true">野</span>
+          <div class="hk-author__main">
+            <div class="hk-author__name">野声档案 <span class="hk-author__field">声音采集</span></div>
+            <div class="hk-author__nums"><span>作品 <b>73</b></span><span>关注 <b>11.1 万</b></span></div>
+            <p class="hk-author__bio">一个专注于环境声的三人小组，长期在城市与近郊采集声音样本。作品常以声音为先导，再补画面，主张“听见一个地方”比“看见一个地方”更难。所有音源均标注设备与采集时间。</p>
+            <button class="hk-btn hk-btn--ghost hk-btn--sm hk-author-btn" type="button" data-author="野声档案" data-field="声音采集" data-works="73" data-fans="11.1 万" data-bio="专注环境声采集与声音叙事的三人小组，作品强调听觉优先，所有音源均标注设备、地点与采集时间。">查看档案</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户口碑 -->
+  <section class="hk-section hk-section--tight" id="hk-口碑" aria-labelledby="hk-h2-reviews">
+    <div class="hk-container">
+      <div class="hk-sec-head">
+        <div class="hk-sec-head__left">
+          <span class="hk-kicker">用户口碑</span>
+          <h2 class="hk-h2" id="hk-h2-reviews">来自社区的真实评价</h2>
+          <p class="hk-sec-sub">我们保留了不同长度、不同维度的评价，包括批评。口碑的价值在于具体，而不是整齐。</p>
+        </div>
+      </div>
+
+      <div class="hk-reviews">
+        <article class="hk-review hk-review--quote">
+          <div class="hk-review__head">
+            <span class="hk-avatarball" style="background:#ff3b30">陈</span>
+            <span class="hk-review__who">陈默的观察笔记</span>
+            <span class="hk-review__when">11月18日</span>
+          </div>
+          <p>看了三年内容平台，五一黑料视频是少数愿意把“我们怎么确认”写在视频里的。那条时间码对齐的教程我照着做，第一次把采访素材接顺了。</p>
+        </article>
+
+        <article class="hk-review">
+          <div class="hk-review__head">
+            <span class="hk-avatarball" style="background:#5b8def">苏</span>
+            <span class="hk-review__who">苏木_剪辑中</span>
+            <span class="hk-review__when">11月16日</span>
+          </div>
+          <div class="hk-review__stars">★★★★★</div>
+          <p>教程密度高，几乎没有废话。缺点是有些专题更新真的慢，等得着急。但慢有慢的道理，素材核验确实费时间。</p>
+        </article>
+
+        <article class="hk-review">
+          <div class="hk-review__head">
+            <span class="hk-avatarball" style="background:#48b39a">何</span>
+            <span class="hk-review__who">何小满</span>
+            <span class="hk-review__when">11月14日</span>
+          </div>
+          <div class="hk-review__stars">★★★★☆</div>
+          <p>投稿流程比我预想的清楚，清单里写了要什么材料，按着准备就行。第一次投稿被退回了，理由写得很具体，不是敷衍的“不符合规范”。</p>
+        </article>
+
+        <article class="hk-review">
+          <div class="hk-review__head">
+            <span class="hk-avatarball" style="background:#f2a03d">吴</span>
+            <span class="hk-review__who">吴岸线</span>
+            <span class="hk-review__when">11月11日</span>
+          </div>
+          <p>作为普通观众，我最喜欢城市夜行地图那条线。没有解说在耳边催你感动，就是安静地看，看完自己会有想法。</p>
+        </article>
+
+        <article class="hk-review">
+          <div class="hk-review__head">
+            <span class="hk-avatarball" style="background:#b06ad6">林</span>
+            <span class="hk-review__who">林间放映室</span>
+            <span class="hk-review__when">11月9日</span>
+          </div>
+          <div class="hk-review__stars">★★★★☆</div>
+          <p>希望移动端能加一个“只看文字索引”的开关，有时候在通勤路上只想快速扫一下标题。整体体验是好的，搜索反应也快。</p>
+        </article>
+
+        <article class="hk-review">
+          <div class="hk-review__head">
+            <span class="hk-avatarball" style="background:#6f7a8a">老</span>
+            <span class="hk-review__who">老周不加班</span>
+            <span class="hk-review__when">11月6日</span>
+          </div>
+          <p>看了一个负面选题的处理过程，说实话有点意外。原来打码尺度是要开会讨论的，以前从没想过这些。这种内容应该多做一些。</p>
+        </article>
+
+        <article class="hk-review">
+          <div class="hk-review__head">
+            <span class="hk-avatarball" style="background:#ff3b30">一</span>
+            <span class="hk-review__who">一帧半</span>
+            <span class="hk-review__when">11月3日</span>
+          </div>
+          <div class="hk-review__stars">★★★★★</div>
+          <p>事实核查那期访谈我看了两遍。受访者停顿的那几秒没有剪掉，反而让整段话变可信了。这是我今年看过最克制的一期内容。</p>
+        </article>
+
+        <article class="hk-review">
+          <div class="hk-review__head">
+            <span class="hk-avatarball" style="background:#48b39a">南</span>
+            <span class="hk-review__who">南风慢递</span>
+            <span class="hk-review__when">10月30日</span>
+          </div>
+          <p>提个小建议：专题页的更新日志可以再显眼一点，我常常不知道上次更新到哪一期了。内容本身没得说，质量稳定。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作品牌 -->
+  <section class="hk-section" id="hk-动态" aria-labelledby="hk-h2-dyn">
+    <div class="hk-container">
+      <div class="hk-sec-head">
+        <div class="hk-sec-head__left">
+          <span class="hk-kicker">企业动态</span>
+          <h2 class="hk-h2" id="hk-h2-dyn">五一黑料视频官方发布与合作伙伴</h2>
+          <p class="hk-sec-sub">平台的产品更新、规范发布与对外合作，都会在这里留下记录，方便创作者与观众追溯。</p>
+        </div>
+        <a class="hk-more" href="#hk-faq">查看帮助中心 →</a>
+      </div>
+
+      <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:26px">
+        <ul class="hk-dynlist">
+          <li class="hk-dyn">
+            <span class="hk-dyn__date">2026.11.20</span>
+            <div>
+              <div class="hk-dyn__title">《真实记录与影像边界》专题第 4 期上线</div>
+              <p class="hk-dyn__desc">新增三条原创影像与一份编辑决策说明，同步开放社区投票，截止 11 月 30 日。</p>
+            </div>
+            <span class="hk-dyn__pill">官方发布</span>
+          </li>
+          <li class="hk-dyn">
+            <span class="hk-dyn__date">2026.11.15</span>
+            <div>
+              <div class="hk-dyn__title">创作者激励计划 3.0 正式发布</div>
+              <p class="hk-dyn__desc">新增内容品质分级与口碑权重两个维度，降低单条播放量在激励计算中的占比，细则可在投稿入口下载。</p>
+            </div>
+            <span class="hk-dyn__pill">产品更新</span>
+          </li>
+          <li class="hk-dyn">
+            <span class="hk-dyn__date">2026.11.08</span>
+            <div>
+              <div class="hk-dyn__title">与三家区域影像机构达成内容合作</div>
+              <p class="hk-dyn__desc">合作方向为在地文化记录与青年创作者扶持，首批联合内容将于十二月上线，接受社区提名。</p>
+            </div>
+            <span class="hk-dyn__pill">合作</span>
+          </li>
+          <li class="hk-dyn">
+            <span class="hk-dyn__date">2026.10.28</span>
+            <div>
+              <div class="hk-dyn__title">溯源档案页改版，新增信源类型标签</div>
+              <p class="hk-dyn__desc">每条视频的信源将标注为当事人陈述、第三方记录或公开资料三类，并注明获取时间。</p>
+            </div>
+            <span class="hk-dyn__pill">产品更新</span>
+          </li>
+          <li class="hk-dyn">
+            <span class="hk-dyn__date">2026.10.16</span>
+            <div>
+              <div class="hk-dyn__title">年度创作挑战赛开启报名</div>
+              <p class="hk-dyn__desc">主题为“我身边的一条线索”，设纪实、访谈、实验影像三组，报名截止 12 月 20 日。</p>
+            </div>
+            <span class="hk-dyn__pill">比赛报名</span>
+          </li>
+        </ul>
+
+        <div class="hk-partners">
+          <div class="hk-partner">
+            <div class="hk-partner__logo">棱镜档案馆</div>
+            <div class="hk-partner__desc">影像资料支持</div>
+          </div>
+          <div class="hk-partner">
+            <div class="hk-partner__logo">南岸放映</div>
+            <div class="hk-partner__desc">线下放映合作</div>
+          </div>
+          <div class="hk-partner">
+            <div class="hk-partner__logo">长夜电台</div>
+            <div class="hk-partner__desc">声音内容共建</div>
+          </div>
+          <div class="hk-partner">
+            <div class="hk-partner__logo">拾光工作坊</div>
+            <div class="hk-partner__desc">创作者培训</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + CTA -->
+  <section class="hk-section hk-section--tight" id="hk-faq" aria-labelledby="hk-h2-faq">
+    <div class="hk-container">
+      <div class="hk-sec-head">
+        <div class="hk-sec-head__left">
+          <span class="hk-kicker">帮助中心</span>
+          <h2 class="hk-h2" id="hk-h2-faq">关于五一黑料视频的常见问题</h2>
+          <p class="hk-sec-sub">投稿、核验、版权与社区规则，先在这里找答案；找不到可以提交反馈，编辑组会在三个工作日内回复。</p>
+        </div>
+      </div>
+
+      <div class="hk-faq">
+        <details>
+          <summary>投稿需要准备哪些材料？</summary>
+          <p class="hk-faq__a">至少需要成片文件、原始素材说明、拍摄时间与地点信息，以及关键结论的信源清单。若涉及具体人物或机构，请一并提供联系与回应记录。平台提供模板下载，可到投稿入口获取。</p>
+        </details>
+        <details>
+          <summary>为什么我的投稿被退回了？</summary>
+          <p class="hk-faq__a">最常见的原因是原始素材不完整或关键结论只有单一信源。退回时会附带具体条目说明，补齐材料后可在原条目继续提交，不需要重新排队。</p>
+        </details>
+        <details>
+          <summary>平台如何判断一条内容是否可以发布？</summary>
+          <p class="hk-faq__a">按素材留存、时间地点可回溯、关键结论双信源、当事方回应窗口四项标准逐条核对。任一环节缺失，内容只能进入未核验栏目，不会出现在精选页面。</p>
+        </details>
+        <details>
+          <summary>我可以转载平台的内容吗？</summary>
+          <p class="hk-faq__a">标注“官方发布”的原创内容，可在保留完整溯源信息与署名、不作剪辑修改的前提下非商业转载。商业用途需通过联系入口提交申请，平台会说明授权范围与限制。</p>
+        </details>
+        <details>
+          <summary>发现内容有错误，怎么反馈？</summary>
+          <p class="hk-faq__a">可在对应视频页提交补充信息，注明具体时间点与依据。编辑组核实后会在更新日志中标注更正说明，并在页面上保留修改前后的对照。</p>
+        </details>
+        <details>
+          <summary>创作者激励如何计算？</summary>
+          <p class="hk-faq__a">由内容品质分级、完播与收藏表现、社区贡献记录三部分构成。单条播放量不再作为主要权重，具体公式随激励计划 3.0 一并公开。</p>
+        </details>
+        <details>
+          <summary>平台会删除负面评价吗？</summary>
+          <p class="hk-faq__a">不会因内容为负面而删除，只处理包含人身攻击、泄露隐私或明显失实的信息。删除操作会在社区公告中说明理由与数量。</p>
+        </details>
+      </div>
+
+      <div style="margin-top:30px">
+        <div class="hk-cta">
+          <div>
+            <h2>把你的线索，变成一条经得起回看的影像</h2>
+            <p>五一黑料视频持续开放投稿与线索征集。我们提供溯源模板、剪辑规范与编辑支持，也愿意花时间听你讲完整个经过。</p>
+          </div>
+          <div class="hk-cta__actions">
+            <button class="hk-btn hk-btn--primary" id="hk-cta-submit" type="button">进入投稿入口</button>
+            <button class="hk-btn hk-btn--ghost" id="hk-cta-share" type="button">分享给朋友</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="hk-footer">
+  <div class="hk-container">
+    <div class="hk-footer__grid">
+      <div class="hk-footer__about">
+        <a class="hk-brand" href="#hk-top" aria-label="返回首页">
+          <span class="hk-brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5l11 6.5-11 6.5V5.5z" fill="#fff"/></svg>
+          </span>
+          <span>
+            <span class="hk-brand__name">五一黑料<span>视频</span></span>
+            <span class="hk-brand__sub">官方影像平台</span>
+          </span>
+        </a>
+        <p>五一黑料视频官方网站 · 版权所有 · 持续运营中。我们是一家专注真实记录与深度影像的内容企业，以专业流程与原创内容构建值得信赖的视频社区。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul class="hk-footer__links">
+          <li><a href="#hk-精选内容">本期精选</a></li>
+          <li><a href="#hk-专题企划">专题企划</a></li>
+          <li><a href="#hk-视频流">内容索引</a></li>
+          <li><a href="#hk-深度解析">关键词解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul class="hk-footer__links">
+          <li><a href="#hk-创作者">创作者名录</a></li>
+          <li><a href="#hk-口碑">用户口碑</a></li>
+          <li><a href="#hk-faq">帮助中心</a></li>
+          <li><a href="#hk-动态">企业动态</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul class="hk-footer__links">
+          <li><a href="#hk-faq">投稿说明</a></li>
+          <li><a href="#hk-faq">版权与转载</a></li>
+          <li><a href="#hk-动态">合作洽谈</a></li>
+          <li><a href="#hk-top">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hk-footer__bottom">
+      <span>© 2026 五一黑料视频 官方网站 · 内容仅供展示与学习参考</span>
+      <span>品牌备案信息：内容运营主体公示于帮助中心 · 持续运营中</span>
+    </div>
+  </div>
+</footer>
+
+<button class="hk-totop" id="hk-totop" type="button" aria-label="回到顶部">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="hk-toast" id="hk-toast" role="status" aria-live="polite"></div>
+
+<div class="hk-modal" id="hk-modal" role="dialog" aria-modal="true" aria-labelledby="hk-modal-title">
+  <div class="hk-modal__box">
+    <button class="hk-modal__close" id="hk-modal-close" type="button" aria-label="关闭弹窗">✕</button>
+    <h3 id="hk-modal-title">提示</h3>
+    <div id="hk-modal-body"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('hk-toast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 公告条横向滚动提示 */
+  var track = document.querySelector('.hk-notice__track');
+  if(track){
+    var autoScroll = function(){
+      if(track.scrollWidth <= track.clientWidth) return;
+      track.scrollLeft += 0.6;
+      if(track.scrollLeft + track.clientWidth >= track.scrollWidth - 1){
+        setTimeout(function(){ track.scrollTo({left:0, behavior:'smooth'}); }, 900);
+      }
+    };
+    var noticePaused = false;
+    track.addEventListener('mouseenter', function(){ noticePaused = true; });
+    track.addEventListener('mouseleave', function(){ noticePaused = false; });
+    setInterval(function(){ if(!noticePaused) autoScroll(); }, 60);
+  }
+
+  /* 移动端导航 */
+  var navToggle = document.getElementById('hk-navtoggle');
+  var nav = document.getElementById('hk-nav');
+  var tools = document.getElementById('hk-tools');
+  if(navToggle){
+    navToggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      tools.classList.toggle('is-open', open);
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.closest('a')){
+        nav.classList.remove('is-open');
+        tools.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 导航高亮 */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.hk-nav__link'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href');
+    return id && id.length > 1 ? document.querySelector(id) : null;
+  });
+  function syncActive(){
+    var pos = window.scrollY + 160;
+    var idx = 0;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) idx = i;
+    });
+    navLinks.forEach(function(a, i){ a.classList.toggle('is-active', i === idx); });
+  }
+  window.addEventListener('scroll', syncActive, {passive:true});
+  syncActive();
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('hk-search-input');
+  var searchBtn = document.getElementById('hk-search-btn');
+  var searchHint = document.getElementById('hk-search-hint');
+  var searchIndex = [
+    {t:'一条影像的来路：从凌晨街角到可核验的 4 分 52 秒', tag:'本期焦点', href:'#hk-精选内容'},
+    {t:'被剪掉的三十秒：字幕组如何在两小时内完成时间校对', tag:'创作幕后', href:'#hk-精选内容'},
+    {t:'三分钟讲清时间码对齐：手机素材与外部录音如何合轨', tag:'教程干货', href:'#hk-视频流'},
+    {t:'采访一位做了十二年事实核查的编辑', tag:'人物访谈', href:'#hk-视频流'},
+    {t:'《真实记录与影像边界》专题', tag:'专题企划', href:'#hk-专题企划'},
+    {t:'《城市夜行地图》专题', tag:'专题企划', href:'#hk-专题企划'},
+    {t:'《剪辑台前的决定》专题', tag:'专题企划', href:'#hk-专题企划'},
+    {t:'五一黑料视频是什么：平台定位、内容标准与社区责任', tag:'深度解析', href:'#hk-深度解析'},
+    {t:'林述白 · 现场论证创作者档案', tag:'创作者', href:'#hk-创作者'},
+    {t:'沈拾光 · 剪辑教学创作者档案', tag:'创作者', href:'#hk-创作者'},
+    {t:'周鹭 · 城市影像创作者档案', tag:'创作者', href:'#hk-创作者'},
+    {t:'投稿需要准备哪些材料', tag:'帮助中心', href:'#hk-faq'},
+    {t:'平台如何判断一条内容是否可以发布', tag:'帮助中心', href:'#hk-faq'}
+  ];
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function runSearch(){
+    if(!searchHint) return;
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchHint.classList.remove('is-show');
+      searchHint.innerHTML = '';
+      return;
+    }
+    var lower = q.toLowerCase();
+    var hits = searchIndex.filter(function(item){
+      return item.t.toLowerCase().indexOf(lower) > -1 || item.tag.toLowerCase().indexOf(lower) > -1;
+    }).slice(0, 5);
+    searchHint.classList.add('is-show');
+    if(!hits.length){
+      searchHint.innerHTML = '未找到与“' + escapeHtml(q) + '”直接匹配的条目。可以试试“时间码”“专题”“创作者”或“投稿”等关键词。';
+      return;
+    }
+    var html = '与“<b style="color:#fff">' + escapeHtml(q) + '</b>”相关的 ' + hits.length + ' 条结果：';
+    html += '<ul style="margin:8px 0 0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px">';
+    hits.forEach(function(h){
+      html += '<li><a href="' + h.href + '" style="color:#ff8b84">' + escapeHtml(h.t) + '</a> <span style="color:#767d88;font-size:12px">· ' + escapeHtml(h.tag) + '</span></li>';
+    });
+    html += '</ul>';
+    searchHint.innerHTML = html;
+  }
+  if(searchBtn){ searchBtn.addEventListener('click', runSearch); }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); runSearch(); } });
+    searchInput.addEventListener('input', function(){ if(!searchInput.value.trim()){ searchHint.classList.remove('is-show'); } });
+  }
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('.hk-like');
+    if(likeBtn){
+      var liked = likeBtn.getAttribute('data-liked') === 'true';
+      var numEl = likeBtn.querySelector('.hk-like__num') || likeBtn.querySelector('.hk-num');
+      if(numEl){
+        var raw = numEl.textContent.replace(/[^0-9.]/g, '');
+        var val = parseFloat(raw) || 0;
+        var isWan = numEl.textContent.indexOf('万') > -1;
+        val = liked ? val - (isWan ? 0.1 : 1) : val + (isWan ? 0.1 : 1);
+        if(val < 0) val = 0;
+        numEl.textContent = isWan ? (Math.round(val * 10) / 10) + '万' : String(Math.round(val));
+      }
+      likeBtn.setAttribute('data-liked', liked ? 'false' : 'true');
+      likeBtn.setAttribute('aria-pressed', liked ? 'false' : 'true');
+      likeBtn.style.color = liked ? '' : '#ff3b30';
+      likeBtn.style.borderColor = liked ? '' : '#ff3b30';
+      showToast(liked ? '已取消赞同' : '已赞同这条内容');
+      return;
+    }
+    var favBtn = e.target.closest('.hk-fav');
+    if(favBtn){
+      var faved = favBtn.getAttribute('data-faved') === 'true';
+      favBtn.setAttribute('data-faved', faved ? 'false' : 'true');
+      favBtn.setAttribute('aria-pressed', faved ? 'false' : 'true');
+      favBtn.textContent = faved ? '收藏' : '已收藏';
+      favBtn.style.color = faved ? '' : '#ffd166';
+      favBtn.style.borderColor = faved ? '' : '#ffd166';
+      showToast(faved ? '已取消收藏' : '已加入收藏，可在个人主页查看');
+      return;
+    }
+  });
+
+  /* 复制链接 */
+  document.addEventListener('click', function(e){
+    var copyBtn = e.target.closest('.hk-copy');
+    if(!copyBtn) return;
+    var title = copyBtn.getAttribute('data-title') || '五一黑料视频';
+    var link = window.location.origin + window.location.pathname + window.location.hash;
+    var text = title + ' — ' + link;
+    function done(){ showToast('链接已复制，可分享给朋友'); }
+    function fail(){
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){ showToast('复制失败，请手动选择内容'); });
+      }else{
+        showToast('当前环境不支持自动复制，请手动选择链接');
+      }
+    }
+    fail();
+  });
+
+  /* 弹窗基础 */
+  var modal = document.getElementById('hk-modal');
+  var modalTitle = document.getElementById('hk-modal-title');
+  var modalBody = document.getElementById('hk-modal-body');
+  var modalClose = document.getElementById('hk-modal-close');
+  var lastFocus = null;
+  function openModal(title, html){
+    lastFocus = document.activeElement;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    modalClose.focus();
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+    if(lastFocus){ lastFocus.focus(); }
+  }
+  if(modalClose){ modalClose.addEventListener('click', closeModal); }
+  if(modal){ modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); }); }
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+
+  /* 作者档案弹窗 */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.hk-author-btn');
+    if(!btn) return;
+    var name = btn.getAttribute('data-author');
+    var field = btn.getAttribute('data-field');
+    var works = btn.getAttribute('data-works');
+    var fans = btn.getAttribute('data-fans');
+    var bio = btn.getAttribute('data-bio');
+    var html = '<p style="margin-bottom:6px"><b style="color:#fff">' + escapeHtml(name) + '</b> · ' + escapeHtml(field) + '</p>' +
+               '<p style="font-size:13px;color:#a3a9b3">作品 ' + escapeHtml(works) + ' · 关注 ' + escapeHtml(fans) + '</p>' +
+               '<p style="font-size:13.5px;line-height:1.8">' + escapeHtml(bio) + '</p>' +
+               '<p style="font-size:12.5px;color:#767d88;margin:0">该创作者长期与五一黑料视频合作，所有作品均在官方网站首发。</p>';
+    openModal('创作者档案', html);
+  });
+
+  /* 分享弹窗 */
+  function openShare(){
+    var html = '<p>五一黑料视频 官方网站 · 原创影像与真实记录社区。你可以选择下面的方式分享给朋友：</p>' +
+      '<div style="display:flex;gap:9px;flex-wrap:wrap;margin:16px 0">' +
+      '<button class="hk-btn hk-btn--primary hk-btn--sm hk-share-item" data-way="微信" type="button">微信</button>' +
+      '<button class="hk-btn hk-btn--ghost hk-btn--sm hk-share-item" data-way="微博" type="button">微博</button>' +
+      '<button class="hk-btn hk-btn--ghost hk-btn--sm hk-share-item" data-way="QQ" type="button">QQ</button>' +
+      '<button class="hk-btn hk-btn--ghost hk-btn--sm hk-copy" data-title="五一黑料视频 官方网站" type="button">复制链接</button>' +
+      '</div>' +
+      '<p style="font-size:12.5px;color:#767d88;margin:0">分享内容均来自五一黑料视频官方发布，转载时请保留平台署名。</p>';
+    openModal('分享平台', html);
+  }
+  document.addEventListener('click', function(e){
+    if(e.target.closest('#hk-hero-share') || e.target.closest('#hk-cta-share')){
+      openShare(); return;
+    }
+    var way = e.target.closest('.hk-share-item');
+    if(way){
+      showToast('已生成' + way.getAttribute('data-way') + '分享卡片，请在新窗口完成发送');
+    }
+  });
+
+  /* 投稿入口 */
+  function openSubmit(){
+    var html = '<p>投稿前请确认：成片文件、原始素材说明、拍摄时间与地点、关键结论信源清单。补齐这些材料能显著提高通过率。</p>' +
+      '<input class="hk-field" id="hk-submit-title" type="text" placeholder="作品标题（不超过 30 字）" aria-label="作品标题">' +
+      '<input class="hk-field" id="hk-submit-contact" type="text" placeholder="联系方式（邮箱或社交账号）" aria-label="联系方式">' +
+      '<textarea class="hk-field" id="hk-submit-desc" rows="3" placeholder="用一两句话说明线索与素材情况" aria-label="线索说明"></textarea>' +
+      '<div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:4px">' +
+      '<button class="hk-btn hk-btn--primary hk-btn--sm" id="hk-submit-send" type="button">提交投稿意向</button>' +
+      '<button class="hk-btn hk-btn--ghost hk-btn--sm" id="hk-submit-cancel" type="button">稍后再说</button>' +
+      '</div>';
+    openModal('投稿入口', html);
+  }
+  document.addEventListener('click', function(e){
+    if(e.target.closest('#hk-submit-btn') || e.target.closest('#hk-cta-submit')){
+      openSubmit(); return;
+    }
+    if(e.target.closest('#hk-submit-cancel')){ closeModal(); return; }
+    if(e.target.closest('#hk-submit-send')){
+      var t = document.getElementById('hk-submit-title');
+      var c = document.getElementById('hk-submit-contact');
+      if(!t || !t.value.trim()){ showToast('请先填写作品标题'); if(t) t.focus(); return; }
+      if(!c || !c.value.trim()){ showToast('请填写联系方式，方便编辑组回复'); if(c) c.focus(); return; }
+      closeModal();
+      showToast('投稿意向已记录，编辑组会在三个工作日内联系你');
+    }
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('hk-totop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 560){ toTop.classList.add('is-show'); }
+    else{ toTop.classList.remove('is-show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('.hk-countup');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+      var start = null;
+      var dur = 1200;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = String(Math.round(target * eased));
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = String(target);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var heroStats = document.querySelector('.hk-hero__stats');
+  if(heroStats){
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ runCounters(); io.disconnect(); } });
+      }, {threshold:0.3});
+      io.observe(heroStats);
+    }else{
+      runCounters();
+    }
+  }
+})();
+</script>
+</body>
+                </html>
